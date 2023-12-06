@@ -235,6 +235,9 @@ class Program
             case "6":
                 Aufgabe6Test();
                 break;
+            case "7":
+                Aufgabe7Test();
+                break;
             default:
                 Console.WriteLine("Falsche Eingabe");
                 break;

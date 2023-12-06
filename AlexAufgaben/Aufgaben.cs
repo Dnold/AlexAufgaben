@@ -87,16 +87,34 @@ class Aufgaben
     //Schreibe ein Programm, das die beiden eingegebenen Paramater 'a' und 'b' addiert und die summe dann wieder ausgibt
     public static int Aufgabe2(int a, int b)
     {
-        return 0;
+        int c = a + b;
+        return c;
     }
     //Schreibe ein Programm, dass alle int Zahlenwerte in dem eingegebenen int array parameter zusammen addiert und dann die summe wieder ausgibt
     public static int Aufgabe3(int[] a)
     {
-        return 0;
+
+        int c = a.Length;
+        int ergebnis = 0;
+        for (int i=0;i<c; i++)
+        {
+            ergebnis += a[i];
+        }
+        return ergebnis;
     }
     public static bool Aufgabe4(int zahl)
     {
+
         bool wahrheitswert = false;
+        if(zahl > 10)
+        {
+            wahrheitswert = true;
+        }
+        else
+        {
+            wahrheitswert = false;
+        }
+
         return wahrheitswert; //Gib hier den Wahrheitswert zurück
     }
     //Aufgabe 5
@@ -105,6 +123,11 @@ class Aufgaben
     public static bool Aufgabe5(int zahl)
     {
         bool wahrheitswert = false;
+        if(zahl >10 && zahl < 20)
+        {
+            wahrheitswert = true; 
+        }
+
         return wahrheitswert; //Gib hier den Wahrheitswert zurück
     }
     //Aufgabe 6
@@ -112,13 +135,33 @@ class Aufgaben
     public static bool Aufgabe6(string[] array)
     {
         bool wahrheitswert = false;
+        for (int i = 0; i< array.Length; i++)
+        {
+            if (array[i] == "Hurensohn")
+            {
+                return true;
+                
+            }
+        }
         return wahrheitswert; //Gib hier den Wahrheitswert zurück
     }
     //Aufgabe 7
     //Schreibe ein Programm, welches die Quersumme der gegeben Zahl zurückgibt
     public static int Aufgabe7(int zahl)
     {
-        return 0;
+    string Quersumme = zahl.ToString();
+        int summe = 0;
+
+        for (int i = 0; i < Quersumme.Length; i++) {
+
+            int addition = Convert.ToInt32(Quersumme[i]);
+            summe += addition;
+           
+
+        }
+
+
+            return summe;
     }
 }
 
