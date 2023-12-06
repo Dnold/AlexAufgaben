@@ -81,7 +81,8 @@ class Aufgaben
     //Schreibe ein Program, dass den eingebenen Parameter 'n' um +1 erhöht und dann wieder ausgibt
     public static int Aufgabe1(int n)
     {
-        return 0;
+        n++;
+        return n;
     }
     //Schreibe ein Programm, das die beiden eingegebenen Paramater 'a' und 'b' addiert und die summe dann wieder ausgibt
     public static int Aufgabe2(int a, int b)
