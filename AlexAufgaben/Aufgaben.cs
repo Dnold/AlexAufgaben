@@ -96,7 +96,7 @@ class Aufgaben
 
         int c = a.Length;
         int ergebnis = 0;
-        for (int i=0;i<c; i++)
+        for (int i = 0; i < c; i++)
         {
             ergebnis += a[i];
         }
@@ -106,7 +106,7 @@ class Aufgaben
     {
 
         bool wahrheitswert = false;
-        if(zahl > 10)
+        if (zahl > 10)
         {
             wahrheitswert = true;
         }
@@ -123,9 +123,9 @@ class Aufgaben
     public static bool Aufgabe5(int zahl)
     {
         bool wahrheitswert = false;
-        if(zahl >10 && zahl < 20)
+        if (zahl > 10 && zahl < 20)
         {
-            wahrheitswert = true; 
+            wahrheitswert = true;
         }
 
         return wahrheitswert; //Gib hier den Wahrheitswert zurück
@@ -135,12 +135,12 @@ class Aufgaben
     public static bool Aufgabe6(string[] array)
     {
         bool wahrheitswert = false;
-        for (int i = 0; i< array.Length; i++)
+        for (int i = 0; i < array.Length; i++)
         {
             if (array[i] == "Hurensohn")
             {
                 return true;
-                
+
             }
         }
         return wahrheitswert; //Gib hier den Wahrheitswert zurück
@@ -149,19 +149,85 @@ class Aufgaben
     //Schreibe ein Programm, welches die Quersumme der gegeben Zahl zurückgibt
     public static int Aufgabe7(int zahl)
     {
-    string Quersumme = zahl.ToString();
+        string Quersumme = zahl.ToString();
         int summe = 0;
 
-        for (int i = 0; i < Quersumme.Length; i++) {
-
-            int addition = Convert.ToInt32(Quersumme[i]);
-            summe += addition;
-           
-
+        for (int i = 0; i < Quersumme.Length; i++)
+        {
+            summe += Convert.ToInt32(Quersumme[i].ToString());
         }
-
-
-            return summe;
+        return summe;
     }
+
+    // Aufgabe 8
+    // Schreibe ein Programm, das den Durchschnitt der Werte in einem double Array zurückgibt.
+    public static double Aufgabe8(double[] array)
+    {
+        return 0;
+    }
+
+    // Aufgabe 9
+    // Schreibe ein Programm, das prüft, ob ein übergebener Text (string) das Wort "Programmieren" enthält.
+    public static bool Aufgabe9(string text)
+    {
+        return false;
+    }
+
+    // Aufgabe 10
+    // Schreibe ein Programm, das prüft, ob eine übergebene Zahl eine Primzahl ist.
+    public static bool Aufgabe10(int zahl)
+    {
+        return false;
+    }
+
+    // Aufgabe 11
+            // Schreibe ein Programm, das die Fakultät einer Zahl berechnet und zurückgibt.
+    public static int Aufgabe11(int zahl)
+    {
+        return 0;
+    }
+
+    // Aufgabe 12
+    // Schreibe ein Programm, das die Fibonacci-Folge bis zu einem übergebenen Parameter zurückgibt.
+    // Die Fibonacci-Folge ist wie folgt definiert:
+    // f(0) = 0
+    // f(1) = 1
+    // f(n) = f(n-1) + f(n-2)
+    public static int[] Aufgabe12(int n)
+    {
+        return null;
+    }
+
+    // Aufgabe 13
+    // Schreibe ein Programm, das die größte Zahl in einem int Array zurückgibt.
+    public static int Aufgabe13(int[] array)
+    {
+        return 0;
+    }
+
+    // Aufgabe 14
+    // Schreibe ein Programm, das den kleinsten Wert in einem int Array zurückgibt.
+    public static int Aufgabe14(int[] array)
+    {
+        return 0;
+    }
+
+    // Aufgabe 15
+    // Schreibe ein Programm, das die Summe der Zahlen von 1 bis zu einer übergebenen Zahl zurückgibt.
+    public static int Aufgabe15(int zahl)
+    {
+        return 0;
+    }
+
+    // Aufgabe 16
+    // Schreibe ein Programm, das die Summe der Zahlen von 1 bis zu einer übergebenen Zahl zurückgibt.
+    public static int Aufgabe16(int endZahl)
+    {
+        return 0;
+    }
+
+  
+
+   
 }
 
