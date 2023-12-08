@@ -163,21 +163,61 @@ class Aufgaben
     // Schreibe ein Programm, das den Durchschnitt der Werte in einem double Array zurückgibt.
     public static double Aufgabe8(double[] array)
     {
-        return 0;
+        int c = array.Length;
+        double ergebnisstotal = 0;
+        double ergebnissdurch = 0;
+        for (int i = 0; i < array.Length; i++)
+        {
+            ergebnisstotal += array[i];
+        }
+        ergebnissdurch = ergebnisstotal / c;
+
+        return ergebnissdurch;
     }
 
     // Aufgabe 9
     // Schreibe ein Programm, das prüft, ob ein übergebener Text (string) das Wort "Programmieren" enthält.
     public static bool Aufgabe9(string text)
     {
-        return false;
+        bool Prog = false;
+
+        if(text.Contains("Programmieren")) 
+        {
+            Prog = true;
+        }
+        else
+        {
+            return Prog;
+        }
+        return Prog;
     }
 
     // Aufgabe 10
     // Schreibe ein Programm, das prüft, ob eine übergebene Zahl eine Primzahl ist.
     public static bool Aufgabe10(int zahl)
     {
-        return false;
+        bool Primzahl = false;
+        if(zahl == 1)
+        {
+            Primzahl = true;
+            return Primzahl;
+        }
+        for (int i = 2; i < zahl; i++)
+        {
+            if(zahl % i == 0)
+            {
+                Primzahl = false;
+                return Primzahl;
+            }
+            else
+            {
+                Primzahl = true;
+            }
+        }
+
+
+
+        return Primzahl;
     }
 
     // Aufgabe 11
