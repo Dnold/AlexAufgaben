@@ -308,7 +308,7 @@ class Program
             new TestInfo<int, bool> {input = 13, output = Aufgaben.Aufgabe10(13), expectedOutput = true, hidden = false},
             new TestInfo<int, bool> {input = 14, output = Aufgaben.Aufgabe10(14), expectedOutput = false, hidden = false},
             new TestInfo<int, bool> {input = 4212, output = Aufgaben.Aufgabe10(4212), expectedOutput = false, hidden = false},
-            new TestInfo<int, bool> {input = 23297, output = Aufgaben.Aufgabe10(16), expectedOutput = true, hidden = true},
+            new TestInfo<int, bool> {input = 23297, output = Aufgaben.Aufgabe10(23297), expectedOutput = true, hidden = true},
         };
         foreach (var item in testInfo)
         {
